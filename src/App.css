@@ -1,3 +1,6 @@
+* {
+box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +38,82 @@
   to {
     transform: rotate(360deg);
   }
+}
+body{
+  background-color:cadetblue;
+}
+#toolbar {
+  display: flex;
+  align-items: center;
+  background-color: #265656;
+  padding: 0.3rem;
+  border: 1px solid #1d2f2f;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  font-family: Russo One;
+  font-size: 1rem;
+  color: black;
+}
+div{
+  display: block;
+}
+#editorWrap{
+  max-width: 600px;
+  margin: 1.125rem auto;
+}
+#editorWrap #toolbar{
+  width: 99%;
+}
+#editorWrap textarea{
+  width: 99%;
+  min-height:200px ;
+  margin-bottom: -5px  ;
+  resize: vertical;
+  outline: none;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 0.875rem;
+  background-color: rgb(0, 134, 134);
+}
+#previewWrap {
+  margin: 1.25rem auto;
+  min-height: 200px;
+  overflow-wrap: break-word;
+}
+#preview {
+  padding:0 1rem ;
+  background-color: rgb(0, 134, 134);
+}
+#preview code {
+  background: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+#preview pre {
+  display: block;
+  overflow: auto;
+  background: white;
+  padding: 5px;
+  line-height: 1.2;
+  text-align: left;
+}
+#preview h1 {
+  border-bottom: 2px solid #224b4b;
+  margin-top: 0;
+}
+#preview h2 {
+  border-bottom: 1px solid #224b4b;
+}
+#preview table {
+  border-collapse: collapse;
+}
+#preview td,
+#preview th {
+  border: 2px solid #224b4b;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#preview img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
 }
